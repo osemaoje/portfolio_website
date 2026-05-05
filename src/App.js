@@ -12,6 +12,11 @@ import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
+import AgApp from "./pages/agapp";
+import Certifications from "./pages/certifications";
+import IyoyoFoods from "./pages/iyoyofoods";
+import Mhat from "./pages/mhat";
+import PlutoAi from "./pages/plutoai";
 
 function App() {
 	useEffect(() => {
@@ -29,6 +34,12 @@ function App() {
 				<Route path="/articles" element={<Articles />} />
 				<Route path="/article/:slug" element={<ReadArticle />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/certifications" element={<Certifications/>} />
+				<Route path="/agapp" element={<AgApp />} />
+				<Route path="/iyoyofoods" element={<IyoyoFoods />} />
+				<Route path="/mhat" element={<Mhat />} />
+				<Route path="/plutoai" element={<PlutoAi />} />
+
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>

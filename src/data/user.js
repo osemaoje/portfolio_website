@@ -1,31 +1,84 @@
 const INFO = {
 	main: {
 		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
+		name: "Elimimian Osemaoje",
+		email: "eosemaoje@gmail.com",
+		logo: "../homepage.jpeg",
 	},
 
 	socials: {
 		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		github: "https://github.com/osemaoje",
+		linkedin: "https://www.linkedin.com/in/elimimian-osemaoje-484038161?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
 
-	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
-	},
+homepage: {
+  title: "Full Stack Software Developer",
+  description: `
+I’m a passionate software engineer who builds scalable, reliable, and high-performance applications that solve real-world problems.  
 
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
+With expertise in React, Flutter, Dart, Laravel, PHP, and SQL, I craft solutions that are not only functional but also elegant, efficient, and future-proof.  
+
+I thrive on tackling complex challenges, whether it’s architecting a web app, designing a mobile experience, or integrating powerful backend systems.  
+
+My code is clean, maintainable, and follows industry best practices, ensuring every project I deliver is built to last.  
+
+From interactive web apps to feature-rich mobile platforms, I transform ideas into fully functional products that delight users and meet business goals.  
+
+I’m driven by curiosity, continuous learning, and the desire to push the boundaries of what technology can achieve.  
+
+If you’re looking for a developer who combines technical excellence, creativity, and a results-driven mindset, I’m ready to bring your vision to life.  
+
+Let’s build something extraordinary together.
+  `,
+},
+
+about: {
+  title: "I am Elimimian Osemaoje (OJE) and I live in Lagos, Nigeria",
+  description: (
+    <>
+      <p>
+        I am a versatile Full Stack Software Developer with over 4 years of experience building web and mobile applications that are scalable, secure, and user-friendly.
+      </p>
+
+      <p>
+        I specialize in React, Flutter, Dart, Laravel, PHP, and SQL, and I am passionate about writing clean, maintainable code that adheres to industry best practices.
+      </p>
+
+      <p>
+        Throughout my career, I have successfully delivered high-impact projects across multiple domains:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Marvel Harry Academy (Mobile App)</strong> – An e-learning platform built with Flutter, offering interactive courses and gamified learning experiences for students.
+        </li>
+        <li>
+          <strong>Iyoyo Foods (E-commerce App)</strong> – A full-featured food ordering app, built with Flutter and integrated with backend systems for seamless ordering, payment, and delivery tracking.
+        </li>
+        <li>
+          <strong>Assemblies of God Sunday School Manual App</strong> – A mobile app that provides structured lessons and resources for Sunday school students, ensuring an engaging learning experience.
+        </li>
+        <li>
+          <strong>Pluto AI Wallet & Blockchain Integration</strong> – A Web3 wallet and AI-powered assistant, integrated with Sepolia Ethereum testnet, allowing users to view balances, send tokens, and interact with blockchain data.
+        </li>
+      </ul>
+
+      <p>
+        I thrive on solving complex challenges, optimizing application performance, and creating digital solutions that make an impact.
+      </p>
+
+      <p>
+        My approach combines technical expertise, innovative thinking, and a results-driven mindset to ensure every project I deliver exceeds expectations.
+      </p>
+    </>
+  ),
+},
+
+
 
 	articles: {
 		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
@@ -35,48 +88,40 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Marvel Harry Academy",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"An e-learning platform designed to deliver structured educational content tailored for adult learners.",
+			logo: "../Marvel.jpg",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "/mhat",
 		},
 
 		{
-			title: "Project 2",
+			title: "Iyoyo Foods",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"A mobile application that provides a convenient and efficient platform for ordering meals and food services.",
+			logo: "../iyoyo.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "/iyoyofoods",
 		},
 
-		{
-			title: "Project 3",
+
+				{
+			title: "Pluto AI Bot",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"A Web3-powered AI assistant offering insights and support on blockchain technology and decentralized ecosystems.",
+			logo: "../pluto.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "/plutoai",
 		},
 
-		{
-			title: "Project 4",
+				{
+			title: "Assemblies of God Sunday School Manual App",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"A digital solution that transforms the Sunday School manual into an accessible and user-friendly mobile application.",
+			logo: "../introduction_animation.png",
 			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			link: "/agapp",
 		},
 	],
 };

@@ -52,11 +52,7 @@ function article_2() {
 			"Tharindu N",
 			"Tharindu Nayanajith",
 		],
-		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
+
 	};
 }
 

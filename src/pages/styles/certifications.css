@@ -1,0 +1,128 @@
+/* ================= PROJECTS GRID SECTION ================= */
+.projects-grid-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 60px auto;
+    text-align: center;
+}
+
+.projects-grid-section h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* ================= PROJECTS GRID ================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    /* BIGGER */
+    gap: 22px;
+}
+
+/* ================= GRID ITEM ================= */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 14px;
+    height: 300px;
+    /* BIGGER */
+    background: #f7f7f7;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= IMAGE ================= */
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.35s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+    .grid-item {
+        height: 210px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .grid-item {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
+    .grid-item {
+        height: 150px;
+    }
+}
+
+/* ================= FULLSCREEN IMAGE MODAL ================= */
+.image-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    /* 👈 bump this up */
+    cursor: zoom-out;
+    animation: fadeIn 0.25s ease;
+}
+
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,279 @@
+/* ================= Hero Image ================= */
+.hero-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 100px auto 50px auto;
+  padding-top: env(safe-area-inset-top);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+  transition: transform 0.5s ease;
+}
+
+.hero-image-container:hover .hero-image {
+  transform: scale(1.03);
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* ================= Projects Grid Section ================= */
+.projects-grid-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.projects-grid-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ================= Projects Grid ================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 15px;
+}
+
+.grid-item {
+  display: flex;           /* Use flex to center the image */
+  align-items: center;     /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 240px;           /* fixed container height */
+  background: #f9f9f9;     /* subtle background for empty areas */
+}
+
+.grid-item img {
+  max-width: 100%;   /* make sure image fits width */
+  max-height: 100%;  /* make sure image fits height */
+  object-fit: contain; /* ensure full portrait is visible */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05); /* subtle zoom on hover */
+}
+
+.grid-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 1024px) {
+  .hero-image-container {
+    height: 350px;
+    margin-top: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .grid-item {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image-container {
+    height: 280px;
+    margin-top: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-gap: 12px;
+  }
+
+  .grid-item {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image-container {
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .hero-text {
+    left: 20px;
+    bottom: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .grid-item {
+    height: 150px;
+  }
+}
+/* ================= HERO VIDEO ================= */
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 👈 prevents cropping */
+  background: #000;     /* fills empty space nicely */
+  animation: fadeIn 0.4s ease;
+}
+
+
+/* ================= PLAY OVERLAY ================= */
+.play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-image-container:hover .play-overlay {
+  opacity: 1;
+}
+
+/* ================= PLAY BUTTON ================= */
+.play-button {
+  width: 90px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.6rem;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.12);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* ================= VIDEO CONTROLS ================= */
+.video-controls {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.video-controls button {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.video-controls button:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* ================= FULLSCREEN MODE ================= */
+.hero-image-container.fullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 9999;
+  border-radius: 0;
+  background: #000;   /* avoids weird edges */
+}
+
+.hero-image-container video {
+  display: block;
+  margin: auto;
+}
+
+
+
+/* ================= MOBILE SUPPORT ================= */
+@media (max-width: 768px) {
+  .play-overlay {
+    opacity: 1; /* always visible on mobile */
+  }
+
+  .play-button {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
