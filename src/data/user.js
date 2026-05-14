@@ -47,7 +47,7 @@ about: {
       </p>
 
       <p>
-        I specialize in React, Flutter, Dart, Laravel, PHP, and SQL, and I am passionate about writing clean, maintainable code that adheres to industry best practices.
+        I specialize in React, Flutter, Dart, Laravel & PHP, and SQL, and I am passionate about writing clean, maintainable code that adheres to industry best practices.
       </p>
 
       <p>
