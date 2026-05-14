@@ -18,7 +18,7 @@ const INFO = {
 	},
 
 homepage: {
-  title: "Full Stack Software Developer",
+  title: "Software Developer",
   description: `
 I’m a passionate software engineer who builds scalable, reliable, and high-performance applications that solve real-world problems.  
 
@@ -43,7 +43,7 @@ about: {
   description: (
     <>
       <p>
-        I am a versatile Full Stack Software Developer with over 4 years of experience building web and mobile applications that are scalable, secure, and user-friendly.
+        I am a versatile Software Developer with over 4 years of experience building web and mobile applications that are scalable, secure, and user-friendly.
       </p>
 
       <p>
