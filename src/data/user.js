@@ -1,10 +1,12 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
+		title: "Elimimian Osemaoje",
 		name: "Elimimian Osemaoje",
 		email: "eosemaoje@gmail.com",
+		phone: "+2348161908359", 
 		logo: "../homepage.jpeg",
 	},
+	
 
 	socials: {
 		twitter: "https://twitter.com/",

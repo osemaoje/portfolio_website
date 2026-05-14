@@ -12,12 +12,12 @@ const Works = () => {
 				body={
 					<div className="works-body">
 						<div className="work">
-							<img src="./huawei.png" alt="huawei" className="work-image" />
+							<img src="./amb.png" alt="huawei" className="work-image" />
 							<div className="work-title">Alpha Morgan Bank</div>
 							<div className="work-subtitle">
 								Software Developer
 							</div>
-							<div className="work-duration">Nov 2024 - Present</div>
+							<div className="work-duration">Sep 2025 - Present</div>
 						</div>
 
 						<div className="work">
@@ -39,7 +39,7 @@ const Works = () => {
 						</div>
 
 						<div className="work">
-							<img src="./marvel.png" alt="marvel" className="work-image" />
+							<img src="./Marvel.png" alt="marvel" className="work-image" />
 							<div className="work-title">Marvel Harry Academy</div>
 							<div className="work-subtitle">
 								Android & iOS App Developer
@@ -55,7 +55,7 @@ const Works = () => {
 						</div>
 
 						<div className="work">
-							<img src="./solar.png" alt="solar" className="work-image" />
+							<img src="./poyen.png" alt="solar" className="work-image" />
 							<div className="work-title">Poyen Nomovo Solar</div>
 							<div className="work-subtitle">Solar Installer</div>
 							<div className="work-duration">Mar 2022 - Jun 2022</div>
@@ -71,7 +71,7 @@ const Works = () => {
 						</div>
 
 						<div className="work">
-							<img src="./pageict.png" alt="pageict" className="work-image" />
+							<img src="./page.png" alt="pageict" className="work-image" />
 							<div className="work-title">Page ICT Center</div>
 							<div className="work-subtitle">IT Personnel</div>
 							<div className="work-duration">May 2021 - Aug 2021</div>
