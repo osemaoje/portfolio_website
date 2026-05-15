@@ -4,20 +4,14 @@ import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
+import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
 
-const About = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
-
-	const currentSEO = SEO.find((item) => item.page === "about");
-
-	const workExperience = [
+const workExperience = [
   {
     logo: "./amb.png",
     alt: "Alpha Morgan Bank",
@@ -27,7 +21,7 @@ const About = () => {
     bullets: [
       "Collaborated with a cross-functional team to design and ship 3+ internal and external web applications using React, TypeScript, and Tailwind CSS for core banking operations within 4 months.",
       "Built an internal account-opening application using Flutter and Dart, streamlining onboarding workflows for banking staff.",
-      "Designed, developed, and deployed USSD banking services (*734#), enhancing customer self-service capabilities and improving transaction accessibility across feature-phone users.",
+      "Designed, developed, and deployed USSD banking services (*734#), enhancing customer self-service capabilities across feature-phone users.",
     ],
   },
   {
@@ -38,9 +32,9 @@ const About = () => {
     duration: "Nov 2024 – Jun 2025",
     note: "Network Assurance Managed Services · IHS Project",
     bullets: [
-      "Leveraged the Remote Monitoring System (RMS) to track and analyse diesel consumption across all IHS sites, ensuring accurate drop metrics and preventing network disruptions and fuel theft.",
-      "Facilitated scheduled SBC meetings to resolve diesel-related discrepancies and operational inefficiencies, maintaining service continuity across all sites.",
-      "Compiled and delivered detailed daily reports on diesel consumption and anomalies; executed escalation protocols promptly to mitigate risks and ensure full operational transparency.",
+      "Leveraged the Remote Monitoring System (RMS) to track and analyse diesel consumption across all IHS sites, preventing network disruptions and fuel theft.",
+      "Facilitated scheduled SBC meetings to resolve diesel-related discrepancies and operational inefficiencies, maintaining service continuity.",
+      "Compiled detailed daily reports on diesel consumption; executed escalation protocols to ensure full operational transparency.",
     ],
   },
   {
@@ -51,9 +45,9 @@ const About = () => {
     duration: "Jan 2024 – Oct 2024",
     note: "Network Assurance Managed Services · IHS Project",
     bullets: [
-      "Managed operational performance of IHS sites and towers across Nigeria using RMS software, ensuring continuous network functionality through proactive monitoring and intervention coordination.",
-      "Conducted regular on-site PPE compliance inspections and generated comprehensive weekly safety reports, escalating critical violations for immediate corrective action.",
-      "Tracked and reported daily diesel usage across all sites, identifying consumption anomalies and escalating discrepancies to prevent operational downtime.",
+      "Managed operational performance of IHS sites across Nigeria using RMS software, ensuring continuous network functionality.",
+      "Conducted regular PPE compliance inspections and generated comprehensive weekly safety reports.",
+      "Tracked daily diesel usage across all sites, identifying anomalies and escalating discrepancies.",
     ],
   },
   {
@@ -73,7 +67,7 @@ const About = () => {
     role: "Cisco Instructor",
     duration: "Feb 2023 – Aug 2023",
     bullets: [
-      "Delivered hands-on instruction for CCNA, IT Essentials, and Python professional certification courses, equipping students with industry-ready technical skills.",
+      "Delivered hands-on instruction for CCNA, IT Essentials, and Python professional certification courses.",
     ],
   },
   {
@@ -84,9 +78,8 @@ const About = () => {
     duration: "Jun 2022 – Nov 2022",
     bullets: [
       "Led the sales and installation of Lumos Solar products, delivering sustainable off-grid energy solutions to local communities.",
-      "Educated clients on solar benefits and system functionality, promoting energy efficiency and long-term cost savings.",
-      "Managed end-to-end implementation from product delivery to post-installation support, achieving high customer satisfaction.",
-      "Participated in advanced sales strategy and product training programmes to continuously drive performance growth.",
+      "Educated clients on solar benefits and system functionality, promoting energy efficiency.",
+      "Managed end-to-end implementation from product delivery to post-installation support.",
     ],
   },
   {
@@ -96,9 +89,8 @@ const About = () => {
     role: "Solar Installer",
     duration: "Mar 2022 – Jun 2022",
     bullets: [
-      "Assessed customer energy consumption and site conditions to design tailored solar systems, including 3 kVA and 4.5 kVA residential installations.",
-      "Managed sales, installation, and ongoing maintenance of solar systems, ensuring peak efficiency and client satisfaction.",
-      "Oversaw sales and installation of Beebee Jump off-grid solar products for remote locations, providing end-to-end consultation and aftercare.",
+      "Assessed customer energy consumption and site conditions to design tailored solar systems.",
+      "Managed sales, installation, and ongoing maintenance, ensuring peak efficiency and client satisfaction.",
     ],
   },
   {
@@ -108,7 +100,7 @@ const About = () => {
     role: "IT Personnel",
     duration: "May 2021 – Aug 2021",
     bullets: [
-      "Performed IT support tasks using the Microsoft Office Suite (Word, Excel, PowerPoint, Photoshop) and underwent structured training in Android and iOS app development.",
+      "Performed IT support tasks using Microsoft Office Suite and underwent structured training in Android and iOS app development.",
     ],
   },
   {
@@ -118,86 +110,119 @@ const About = () => {
     role: "Marketing Sales Manager",
     duration: "Dec 2016",
     bullets: [
-      "Drove sales of Multichoice products (GOtv & DStv), achieving 100+ sales within a single month through targeted outreach and strong customer engagement.",
+      "Drove sales of Multichoice products (GOtv & DStv), achieving 100+ sales within a single month.",
     ],
   },
 ];
 
+const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-	return (
-		<React.Fragment>
-			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
+  const currentSEO = SEO.find((item) => item.page === "about");
 
-			<div className="page-content">
-				<NavBar active="about" />
-				<div className="content-wrapper">
-					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
-					</div>
+  return (
+    <React.Fragment>
+      <Helmet>
+        <title>{`Work | ${INFO.main.title}`}</title>
+        <meta name="description" content={currentSEO.description} />
+        <meta name="keywords" content={currentSEO.keywords.join(", ")} />
+      </Helmet>
 
-					            {/* ── WORK EXPERIENCE ── */}
-            <div className="homepage-work-experience" id="experience">
-              <h2 className="section-title" style={{ marginBottom: "8px" }}>Work Experience</h2>
-              <p style={{
-                fontSize: "15px",
-                color: "rgba(13,13,13,0.5)",
-                marginBottom: "40px",
-                marginTop: 0,
-              }}>
-                A track record across software development, telecoms infrastructure, renewable energy, and education.
-              </p>
+      <div className="page-content">
+        <NavBar active="about" />
+        <div className="content-wrapper">
+          <div className="about-logo-container">
+            <div className="about-logo">
+              <Logo width={46} />
+            </div>
+          </div>
 
-              <div className="experience-timeline">
-                {workExperience.map((job, idx) => (
-                  <div className="experience-entry" key={idx}>
-                    {/* Left: logo + timeline line */}
-                    <div className="experience-left">
-                      <div className="experience-logo-wrap">
-                        <img src={job.logo} alt={job.alt} className="experience-logo" />
-                      </div>
-                      {idx < workExperience.length - 1 && (
-                        <div className="experience-line" />
-                      )}
-                    </div>
+          <div className="about-container">
+            <div className="about-main">
+              {/* ── LEFT: Photo + socials ── */}
+              <div className="about-left-side">
+                <div className="about-image-container">
+                  <div className="about-image-wrapper">
+                    <img src={INFO.main.logo} alt={INFO.main.name} />
+                  </div>
+                </div>
+                <div className="about-socials">
+                  <Socials />
+                </div>
+              </div>
 
-                    {/* Right: content */}
-                    <div className="experience-content">
-                      <div className="experience-header">
-                        <div>
-                          <div className="experience-role">{job.role}</div>
-                          <div className="experience-company">{job.company}</div>
-                          {job.note && (
-                            <div className="experience-note">{job.note}</div>
+              {/* ── RIGHT: Bio + Experience ── */}
+              <div className="about-right-side">
+                <div className="title about-title">{INFO.about.title}</div>
+
+                <div className="about-socials-mobile">
+                  <Socials />
+                </div>
+
+                <div className="about-intro-block">
+                  {INFO.about.description}
+                </div>
+
+                {/* ── WORK EXPERIENCE TIMELINE ── */}
+                <div className="homepage-work-experience" id="experience">
+                  <span style={{
+                    display: "block",
+                    fontSize: "10px",
+                    fontWeight: 700,
+                    letterSpacing: "2.5px",
+                    textTransform: "uppercase",
+                    color: "var(--gold)",
+                    marginBottom: "8px",
+                  }}>
+                    Career
+                  </span>
+                  <h2 className="section-title" style={{ marginBottom: "40px" }}>
+                    Work Experience
+                  </h2>
+
+                  <div className="experience-timeline">
+                    {workExperience.map((job, idx) => (
+                      <div className="experience-entry" key={idx}>
+                        <div className="experience-left">
+                          <div className="experience-logo-wrap">
+                            <img src={job.logo} alt={job.alt} className="experience-logo" />
+                          </div>
+                          {idx < workExperience.length - 1 && (
+                            <div className="experience-line" />
                           )}
                         </div>
-                        <div className="experience-duration">{job.duration}</div>
+                        <div className="experience-content">
+                          <div className="experience-header">
+                            <div>
+                              <div className="experience-role">{job.role}</div>
+                              <div className="experience-company">{job.company}</div>
+                              {job.note && <div className="experience-note">{job.note}</div>}
+                            </div>
+                            <div className="experience-duration">{job.duration}</div>
+                          </div>
+                          <ul className="experience-bullets">
+                            {job.bullets.map((point, i) => (
+                              <li key={i}>{point}</li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
-                      <ul className="experience-bullets">
-                        {job.bullets.map((point, i) => (
-                          <li key={i}>{point}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             </div>
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
-			</div>
-		</React.Fragment>
-	);
+          </div>
+
+          <div className="page-footer">
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default About;

@@ -1,14 +1,42 @@
-:root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap");
 
-	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
-	/* --------------------- */
+:root {
+  /* ── Core Palette ── */
+  --bg:          #0A0A0B;
+  --bg-2:        #111113;
+  --bg-3:        #1A1A1E;
+  --surface:     #1E1E23;
+  --surface-2:   #26262C;
+  --border:      rgba(255,255,255,0.07);
+  --border-hover:rgba(255,255,255,0.15);
+
+  /* ── Text ── */
+  --text-primary:   #F0EDE8;
+  --text-secondary: rgba(240,237,232,0.6);
+  --text-muted:     rgba(240,237,232,0.35);
+
+  /* ── Accent ── */
+  --gold:        #C9A84C;
+  --gold-light:  #E8C96A;
+  --gold-dim:    rgba(201,168,76,0.12);
+  --gold-glow:   rgba(201,168,76,0.25);
+
+  /* ── Semantic (legacy compat) ── */
+  --primary-color:    var(--text-primary);
+  --secondary-color:  var(--text-secondary);
+  --tertiary-color:   var(--text-muted);
+  --quaternary-color: var(--border);
+  --link-color:       var(--gold);
+
+  /* ── Typography ── */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body:    "Outfit", system-ui, sans-serif;
+  --primary-font:   var(--font-body);
+  --secondary-font: var(--font-display);
+
+  /* ── Spacing & Radius ── */
+  --radius-sm:  6px;
+  --radius:    12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
 }

@@ -1,6 +1,14 @@
 .logo {
-	border-radius: 50%;
-	display: block;
-	margin: 0;
-	padding: 0;
+  border-radius: 50%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 1.5px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 3px var(--gold-dim);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  box-shadow: 0 6px 28px rgba(0,0,0,0.6), 0 0 0 4px var(--gold-glow);
+  transform: scale(1.04);
 }

@@ -12,53 +12,20 @@ const NavBar = (props) => {
 				<nav className="navbar">
 					<div className="nav-background">
 						<ul className="nav-list">
-							<li
-								className={
-									active === "home"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "home" ? "nav-item active" : "nav-item"}>
 								<Link to="/">Home</Link>
 							</li>
-							<li
-								className={
-									active === "about"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "about" ? "nav-item active" : "nav-item"}>
 								<Link to="/about">Work</Link>
 							</li>
-							<li
-								className={
-									active === "projects"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "projects" ? "nav-item active" : "nav-item"}>
 								<Link to="/projects">Projects</Link>
 							</li>
-					
-							<li
-								className={
-									active === "contact"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
+							<li className={active === "contact" ? "nav-item active" : "nav-item"}>
 								<Link to="/contact">Contact</Link>
-								
 							</li>
-							<li
-								className={
-									active === "certifications"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/certifications">Certifications</Link>
-								
+							<li className={active === "certifications" ? "nav-item active" : "nav-item"}>
+								<Link to="/certifications">Certs</Link>
 							</li>
 						</ul>
 					</div>

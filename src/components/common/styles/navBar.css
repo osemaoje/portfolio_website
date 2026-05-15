@@ -1,74 +1,85 @@
 @import "../../../data/styles.css";
 
 .nav-container {
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	top: 3vh;
-	z-index: 999;
+  position: fixed;
+  top: 24px;
+  z-index: 1000;
 }
 
 .nav-background {
-	width: 380px;
-	height: 40px;
-	padding-left: 0%;
-	padding-right: 0%;
-	background: #fff;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-	border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 8px;
+  background: rgba(14, 14, 16, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.03) inset,
+    0 20px 60px rgba(0,0,0,0.4);
 }
 
 .nav-list {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	align-items: center;
-	margin-left: -16px;
-	margin-right: 20px;
-	margin-top: 11px;
-}
-
-.nav-item {
-	font-weight: bold;
-	font-size: 80%;
-}
-
-.nav-item.active a {
-	color: var(--link-color) !important;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2px;
+  align-items: center;
 }
 
 .nav-item a {
-	text-decoration: none;
-	color: var(--primary-color);
+  display: block;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-item a:hover {
-	color: var(--link-color);
-	transition: color 0.3s ease-in-out;
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.06);
 }
 
+.nav-item.active a {
+  color: var(--gold) !important;
+  background: var(--gold-dim);
+}
+
+/* ── Mobile ── */
 @media (max-width: 600px) {
-	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
-	}
+  .navbar {
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100vw - 32px);
+    max-width: 420px;
+  }
 
-	.nav-background {
-		width: 80%;
-		height: 40px;
-	}
+  .nav-background {
+    width: 100%;
+    justify-content: center;
+    padding: 5px 6px;
+  }
 
-	.nav-item {
-		font-weight: bold;
-	}
+  .nav-item a {
+    font-size: 11.5px;
+    padding: 6px 10px;
+  }
 }

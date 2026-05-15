@@ -2,43 +2,38 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Elimimian Osemaoje — Software Developer specialising in React, Flutter, Laravel and Web3. Building scalable, high-quality web and mobile applications from Lagos, Nigeria.",
+		keywords: ["Elimimian Osemaoje", "Software Developer", "React Developer", "Flutter Developer", "Lagos Nigeria"],
 	},
-
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Learn about Elimimian Osemaoje's experience across software development, telecoms infrastructure, renewable energy, and education.",
+		keywords: ["Elimimian Osemaoje", "Software Developer", "Work Experience", "Alpha Morgan Bank", "Huawei"],
 	},
-
 	{
 		page: "articles",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Long-form thoughts by Elimimian Osemaoje on programming, leadership, product design, and technology.",
+		keywords: ["Elimimian Osemaoje", "Tech Articles", "Programming Blog"],
 	},
-
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Portfolio projects by Elimimian Osemaoje — from e-learning mobile apps to Web3 wallets and banking software.",
+		keywords: ["Elimimian Osemaoje", "Portfolio", "Projects", "Flutter Apps", "React Apps"],
 	},
-
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Get in touch with Elimimian Osemaoje — open to collaborations, freelance work, and new opportunities.",
+		keywords: ["Elimimian Osemaoje", "Contact", "Hire Developer", "Lagos Nigeria"],
 	},
-
 	{
 		page: "certifications",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Professional certifications earned by Elimimian Osemaoje across software, networking, and technology.",
+		keywords: ["Elimimian Osemaoje", "Certifications", "CCNA", "Professional Credentials"],
 	},
 ];
 
