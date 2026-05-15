@@ -48,9 +48,14 @@ const Contact = () => {
 							me. I welcome your feedback, questions, and
 							suggestions. If you have a specific question or
 							comment, please feel free to email me directly at
-							&nbsp;{" "}
+							&nbsp;
 							<a href={`mailto:${INFO.main.email}`}>
 								{INFO.main.email}
+							</a>
+							. You can also reach me via phone at
+							&nbsp;
+							<a href="tel:+2348123456789">
+								+234 816 190 8359
 							</a>
 							. I make an effort to respond to all messages within
 							24 hours, although it may take me longer during busy
@@ -58,13 +63,14 @@ const Contact = () => {
 							on my website to get in touch. Simply fill out the
 							required fields and I'll get back to you as soon as
 							possible. Finally, if you prefer to connect on
-							social media, you can find me on{" "}
+							social media, you can find me on
+							&nbsp;
 							<a
 								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
-								{INFO.socials.linkedin}
+								LinkedIn
 							</a>
 							. I post regular updates and engage with my
 							followers there, so don't hesitate to reach out.
