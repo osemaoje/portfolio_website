@@ -51,7 +51,7 @@ const Homepage = () => {
 							</div>
 
 							<div className="subtitle homepage-subtitle">
-								I build scalable web and mobile applications that solve real problems — with React, Flutter, Laravel, and a relentless focus on quality.
+								I build scalable website and mobile applications that solve real problems — with React, Flutter, Laravel, and a relentless focus on quality.
 							</div>
 
 							{/* Socials */}
